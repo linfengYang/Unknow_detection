@@ -14,7 +14,7 @@ from Models import utils, analysis
 from pyod.utils.data import generate_data
 from pyod.utils.data import evaluate_print
 from pyod.utils.example import visualize
-from pyod.models.lunar import LUNAR         #目前最合适，效果好，异常检测能出来，非目标检测也能
+from pyod.models.lunar import LUNAR         
 from sklearn.metrics import f1_score
 from sklearn.metrics import roc_auc_score
 # from adbench.baseline.DAGMM.run import DAGMM
@@ -378,8 +378,8 @@ def unknow_module(unknow_point,cnt,X_train=None,y_train=None,X_test=None,y_test=
     detector_list = [LOF(n_neighbors=15), LOF(n_neighbors=20),
                      LOF(n_neighbors=25), LOF(n_neighbors=35)]
     #SUBSPACE  UNIFORM
-    clf = LUNAR(n_neighbours=12,n_epochs=500,contamination=0.10,proportion=0.10)     #k=12 阈值0.9，0.85适合plaid2017
-    # clf = LUNAR(n_neighbours=7,n_epochs=500,contamination=0.02,proportion=0.10)        #k=7 阈值0.98，0.95适合whited
+    clf = LUNAR(n_neighbours=12,n_epochs=500,contamination=0.10,proportion=0.10)     
+    # clf = LUNAR(n_neighbours=7,n_epochs=500,contamination=0.02,proportion=0.10)        
     # clf=DeepSVDD()
     clf.fit(X_train)
 
