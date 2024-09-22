@@ -14,7 +14,7 @@ from Models import utils, analysis
 from pyod.utils.data import generate_data
 from pyod.utils.data import evaluate_print
 from pyod.utils.example import visualize
-from pyod.models.lunar import LUNAR         #目前最合适，效果好，异常检测能出来，非目标检测也能
+from pyod.models.lunar import LUNAR        
 from pyod.models.thresholds import FILTER
 # from pyod.models.vae import VAE
 from sklearn.metrics import f1_score
@@ -355,7 +355,7 @@ def unknow_module(unknow_point,cnt,X_train=None,y_train=None,X_test=None,y_test=
     detector_list = [LOF(n_neighbors=15), LOF(n_neighbors=20),
                      LOF(n_neighbors=25), LOF(n_neighbors=35)]
     #SUBSPACE  UNIFORM
-    clf = LUNAR(n_neighbours=5)     #k=5适合单未知变量，3适合多未知电器
+    clf = LUNAR(n_neighbours=5)     
     clf.fit(X_train)
 
     y_train_pred = clf.labels_  # binary labels (0: inliers, 1: outliers)
