@@ -72,8 +72,7 @@ if __name__ == '__main__':
         print(text2art(problem, font='small'))
         # ------------------------------------ Load Data ---------------------------------------------------------------
         logger.info("Loading Data ...")
-
-        # Data = Data_Loader(config)              # 8:2实验
+            
         
         result_finally=[]                                                   #储存每一轮结果，便于计算
         acc=[]
@@ -112,12 +111,6 @@ if __name__ == '__main__':
         unknows_white_list=[[0,1,9],[1,3,6],[4,5,8],[2,7,11],[4,6,10]]
         cnt=0
         for i in (range(11)):
-        # for i in unknows_Plaid2017_list:
-        # for i in unknows_white_list:
-            # i=[1,2,9]
-            # i=1
-            # i=3
-            # i=unknows_Plaid2017_list[3]
             i=0
             cnt+=1
             X_train=[]
