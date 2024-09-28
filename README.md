@@ -38,11 +38,11 @@ For example:
 
 #### WHITED
 
-![image-20240928095952648](C:\Users\帅哥小武\AppData\Roaming\Typora\typora-user-images\image-20240928095952648.png)
+![image-20240928095952648](./Fig/WHITED.png)
 
 #### PLAID2017
 
-![image-20240928100108900](C:\Users\帅哥小武\AppData\Roaming\Typora\typora-user-images\image-20240928100108900.png)
+![image-20240928100108900](./Fig/Plaid2017.png)
 
 ### Consider the scenario of an unknown electrical appliance
 
