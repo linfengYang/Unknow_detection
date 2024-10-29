@@ -50,9 +50,19 @@ detail in paper（TODO ）
 
 ### Consider the scenario of multiple unknown electrical appliance
 
-detail in paper（TODO ）
 
+#### PLAID2017 
+consider (Compact fluorescent lamp, Fan, Vaccum) to be unknown appliances at the same time
 
+take all 2,9 appliance identification results on 1(they are all unknow)
+
+![multiple_plaid](./Fig/multiple_plaid.png)
+#### WHITED
+consider (Ap 5, Ap7, Ap11) to be unknown appliances at the same time
+
+take all 5,11 appliance identification results on 7(they are all unknow)
+
+![multiple_whited](./Fig/multiple_whited.png)
 
 ### Graph
 
@@ -63,3 +73,13 @@ T-sne for Origin sequence(2D)
 T-sne for Feature embedding sequence(2D)
 
 ![all_train_2D](./Fig/all_train_2D.png)
+
+## Acknowledgments
+
+**RoPE** [Rotary Position Embedding for Vision Transformer](https://github.com/naver-ai/rope-vit)
+**Coordinate attention** [Coordinate Attention for Efficient Mobile Network Design](https://github.com/houqb/CoordAttention)
+**ConvTran** [Transformers for Multivariate Time Series Classification](https://github.com/Navidfoumani/ConvTran)
+**librosa** [A python package for music and audio analysis.](https://github.com/librosa/librosa)
+**PyOD** [Python library for detecting anomalous/outlying objects in multivariate data](https://github.com/yzhao062/pyod)
+
+Some parts of the Code are taken from the above repository
