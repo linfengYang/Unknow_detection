@@ -77,9 +77,13 @@ T-sne for Feature embedding sequence(2D)
 ## Acknowledgments
 
 **RoPE** [Rotary Position Embedding for Vision Transformer](https://github.com/naver-ai/rope-vit)
+
 **Coordinate attention** [Coordinate Attention for Efficient Mobile Network Design](https://github.com/houqb/CoordAttention)
+
 **ConvTran** [Transformers for Multivariate Time Series Classification](https://github.com/Navidfoumani/ConvTran)
+
 **librosa** [A python package for music and audio analysis.](https://github.com/librosa/librosa)
+
 **PyOD** [Python library for detecting anomalous/outlying objects in multivariate data](https://github.com/yzhao062/pyod)
 
 Some parts of the Code are taken from the above repository
